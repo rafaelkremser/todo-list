@@ -1,0 +1,81 @@
+.tasks {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.list {
+  margin-top: 4rem;
+  width: 736px;
+}
+
+.list header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.list header div {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.list header div span {
+  background: var(--gray-400);
+  border-radius: 1rem;
+  padding: 0 .5rem;
+}
+  
+.list header .createdTasks p {
+  color: var(--blue);
+}
+  
+.list header .completedTasks p {
+  color: var(--purple)
+}
+
+.inputBox {
+  display: flex;
+  width: 736px;
+  margin-top: calc(0px - 1.5rem - 6px);
+}
+
+.inputBox input {
+  flex: 1;
+  background: var(--gray-500);
+  padding: 1rem;
+  color: var(--gray-100);
+  border: none;
+  outline: 1px solid var(--gray-700);
+  border-radius: 8px;
+}
+
+.inputBox input::placeholder {
+  color: var(--gray-300);
+}
+
+.inputBox input:focus,
+.inputBox input:not(:placeholder-shown) {
+  outline: 1px solid var(--purple-dark);
+}
+
+.inputBox button {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  margin-left: .5rem;
+  background: var(--blue-dark);
+  border: none;
+  padding: 1rem;
+  border-radius: 8px;
+  color: var(--gray-100);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.inputBox button:hover {
+  background: var(--blue);
+}

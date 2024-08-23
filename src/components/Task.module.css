@@ -1,0 +1,46 @@
+.task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: .75rem;
+  margin-top: .75rem;
+  padding: 1rem;
+  background: var(--gray-500);
+  border: 1px solid var(--gray-400);
+  border-radius: 8px;
+}
+
+.task button {
+  display: flex;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.task .uncheck {
+  color: var(--blue);
+}
+
+.task .check {
+  color: var(--purple-dark);
+}
+
+.task .pCheck {
+  color: var(--gray-300);
+  text-decoration: line-through;
+  pointer-events: none;
+}
+
+.task .trash {
+  color: var(--gray-300);
+}
+
+.task .trash:hover {
+  color: var(--danger);
+}
+
+.task p {
+  flex: 1;
+  font-size: 14px;
+  line-height: 140%;
+}
